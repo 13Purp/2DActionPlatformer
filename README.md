@@ -2,11 +2,14 @@
 
 A 2D action platformer scripted in C#, unity being used mainly for rendering and collision detection
 
+Location of scripts: Assets/functionaliguess ( Reminder to self to change the name of the folder)
+
+
 Currently implemented:
 
   -Controller interface
 	
-    	-Currently used by the PlayerController and Enemy classes
+    -Currently used by the PlayerController and Enemy classes
     -Classes implementing the interface deal with moving their respective gameObject and performing certain actions
     -Classes currently inheriting the Enemy class
         -BlobController, an enemy type similar to Super Mario's goombas with added patrolling behaviours and player detection
@@ -24,7 +27,8 @@ Currently implemented:
   -Weapon class
 	
     -The weapon is held by objects implementing the Controller interface and "fires"  Bullets
-    -Weapons follow a target (The mouse cursor in case of Player holding it or a position set by the object holding the weapon)
+    -Weapons follow a target (The mouse cursor in case of Player holding it or a position set by the object holding the Weapon)
+    -The display of weapons can be turned off by the class holding them (by calling the displayWeapon method of said Weapon), used to represent a fighting/idle state
     -The switching of bullets is implemented using the Strategy design pattern
   
   -WorldCache class
@@ -36,4 +40,18 @@ Currently implemented:
 	
     -Platforms that are physics objects and thus, react to gravity and other Physics objects (such as the Player, Enemies, WindBullets, etc...)
     -While traveling at sufficiently high speeds, are capable of "hurting" Enemies on collision by calling their TakeDamage method
+
+
+Remaining functionalities before delving into level desing:
+
+	-Capability of player to sprint and cling onto edges of platforms while in a non-fighting state
+ 	-Objects interactable by the player (Buttons, Doors, Levers, etc...)
+ 	-Dialog boxes
+  	-Dynamic lighting effects
+   	-More enemy types
+	-Possibly more bullet types
+	-Particle effects
+      	
+     	
+
 
