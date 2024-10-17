@@ -1,0 +1,3 @@
+repository "gameIguess@IlijaJakovljevi@cloud"
+  path "/"
+    smartbranch "/main"
