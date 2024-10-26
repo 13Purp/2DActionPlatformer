@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\gameIguess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|c:\\users\\user\\gameiguess\\assets\\functionaliguess\\anxelenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\anxelenacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|c:\\users\\user\\gameiguess\\assets\\functionaliguess\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\blobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\worldcache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\zapbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\zapbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\windbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\windbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\gameIguess\\Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\spritemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\zapimpacteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\zapimpacteffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|C:\\Users\\user\\gameIguess\\assets\\functionaliguess\\zapline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B5F4FC-CA2F-42F4-BFF0-FF2229139127}|Assembly-CSharp.csproj|solutionrelative:assets\\functionaliguess\\zapline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,11 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "AnxElenaController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\AnxElenaController.cs",
+              "RelativeDocumentMoniker": "Assets\\functionaliguess\\AnxElenaController.cs",
+              "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\AnxElenaController.cs",
+              "RelativeToolTip": "Assets\\functionaliguess\\AnxElenaController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T20:59:03.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IBullet.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\IBullet.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\IBullet.cs",
@@ -82,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IController.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\IController.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\IController.cs",
@@ -95,18 +96,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "SpritePostProcess.cs",
-              "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs",
-              "ToolTip": "C:\\Users\\user\\gameIguess\\Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.2d.animation@9.1.2\\Editor\\SpritePostProcess.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAjwPMAAADCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:26:49.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "SpriteManager.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\SpriteManager.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\SpriteManager.cs",
@@ -124,73 +113,40 @@
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\PlayerController.cs",
               "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\PlayerController.cs",
               "RelativeToolTip": "Assets\\functionaliguess\\PlayerController.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAcwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T22:09:22.936Z"
+              "WhenOpened": "2024-10-07T22:09:22.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ZapLine.cs",
-              "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapLine.cs",
-              "RelativeDocumentMoniker": "Assets\\functionaliguess\\ZapLine.cs",
-              "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapLine.cs",
-              "RelativeToolTip": "Assets\\functionaliguess\\ZapLine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T15:07:20.042Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ZapImpactEffect.cs",
-              "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapImpactEffect.cs",
-              "RelativeDocumentMoniker": "Assets\\functionaliguess\\ZapImpactEffect.cs",
-              "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapImpactEffect.cs",
-              "RelativeToolTip": "Assets\\functionaliguess\\ZapImpactEffect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T12:44:21.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BlobController.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\BlobController.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\BlobController.cs",
               "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\BlobController.cs",
               "RelativeToolTip": "Assets\\functionaliguess\\BlobController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowBYAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowEAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T12:19:11.727Z"
+              "WhenOpened": "2024-10-04T12:19:11.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\Enemy.cs",
               "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\Enemy.cs",
               "RelativeToolTip": "Assets\\functionaliguess\\Enemy.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwC8AAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwC8AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T12:18:35.045Z"
+              "WhenOpened": "2024-10-04T12:18:35.045Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ZapBullet.cs",
-              "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapBullet.cs",
-              "RelativeDocumentMoniker": "Assets\\functionaliguess\\ZapBullet.cs",
-              "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\ZapBullet.cs",
-              "RelativeToolTip": "Assets\\functionaliguess\\ZapBullet.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAmwMMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T12:06:41.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "WorldCache.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\WorldCache.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\WorldCache.cs",
@@ -202,13 +158,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\Weapon.cs",
               "ToolTip": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\Weapon.cs",
               "RelativeToolTip": "Assets\\functionaliguess\\Weapon.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAwGYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T12:00:54.869Z",
               "EditorCaption": ""
@@ -227,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MovingPlatform.cs",
               "DocumentMoniker": "C:\\Users\\user\\gameIguess\\Assets\\functionaliguess\\MovingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\functionaliguess\\MovingPlatform.cs",

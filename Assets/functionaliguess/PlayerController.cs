@@ -14,15 +14,14 @@ public class PlayerController : MonoBehaviour,IController
 
     private RaycastHit2D _jumpPoint;
     private float _moveX;
-    private float _moveY;
     private float _standardMoveSpeed;
     public bool _facingRight;
     private bool _isJumping;
     private bool _jumpBuffered;
     private bool _isRunning;
-    private bool _abortRun;
     private bool _usingWeapon;
     private bool _isWalking;
+    private float _runCntDwn;
 
 
     private bool _wFire;
@@ -88,6 +87,7 @@ public class PlayerController : MonoBehaviour,IController
         _wFire = false;
         _sFire = false;
         _isWalking = false;
+        _runCntDwn = 0;
         //weapon.displayWeapon();
 
         _isGrounded = true;
@@ -142,31 +142,31 @@ public class PlayerController : MonoBehaviour,IController
         if(_sFire) 
             weapon.strongFire();
 
-        velocityDebug = _rigidBody2D.velocity.x;
-        _jumpPoint = Physics2D.BoxCast(_capCol.bounds.center, _boxCastSize, 0f, Vector2.down, 0.1f, _jumpable);
+        handleWalk();
 
-        if (_moveX < -0.1 || _moveX > 0.1)
-        {
-            _isWalking = true;
-            _rigidBody2D.AddForce(new Vector2(_moveX * _moveSpeed, 0f), ForceMode2D.Impulse);
-        }
-        else
-        {
-            _isWalking = false;
-            _isRunning = false;
-        }
+        handleJump();
 
+       
+
+        animator.SetBool("isWalking", _isWalking);
+        animator.SetBool("isShooting", _usingWeapon);
+    
+    }
+
+    
+    private void handleJump()
+    {
         _wasGrounded = _isGrounded;
         _isGrounded = IsGrounded();
         //bool Jumped = false;
 
-         if(_rigidBody2D.velocity.y < 0)
+        if (_rigidBody2D.velocity.y < 0)
         {
             _rigidBody2D.AddForce(_gravityModifier, ForceMode2D.Force);
         }
         _isJumping = (_isJumping && _isGrounded) ? false : _isJumping;
 
-        
+
 
 
 
@@ -202,16 +202,48 @@ public class PlayerController : MonoBehaviour,IController
                     _jumpPoint.rigidbody.AddForce(_jumpOffVec, ForceMode2D.Impulse);
             }
         }
-
-        animator.SetBool("isWalking", _isWalking);
-        animator.SetBool("isShooting", _usingWeapon);
-    
     }
 
-    
+    private void handleWalk()
+    {
+        velocityDebug = _rigidBody2D.velocity.x;
+        _jumpPoint = Physics2D.BoxCast(_capCol.bounds.center, _boxCastSize, 0f, Vector2.down, 0.1f, _jumpable);
 
+        if (_moveX < -0.1 || _moveX > 0.1)
+        {
+            
+            if (_moveX > 0.1 && !_facingRight && !_usingWeapon)
+                Flip();
+            if (_moveX < 0.1 && _facingRight && !_usingWeapon)
+                Flip();
+            if(!_usingWeapon)
+                _runCntDwn += Time.fixedDeltaTime;
+
+
+            if (_runCntDwn > 2f && !_usingWeapon)
+            {
+                _isRunning = true;
+                _isWalking = true;
+                Debug.Log("Running");
+                _rigidBody2D.AddForce(new Vector2(_moveX * _moveSpeed * 2, 0f), ForceMode2D.Impulse);
+            }       
+            else
+            {
+                _isWalking = true;
+                _rigidBody2D.AddForce(new Vector2(_moveX * _moveSpeed, 0f), ForceMode2D.Impulse);
+            }
+        }
+        else
+        {
+            _runCntDwn = 0;
+            _isWalking = false;
+            _isRunning = false;
+        }
+
+    }
     public void Flip()
     {
+        _runCntDwn = 0f;
         _facingRight = !_facingRight;
         transform.Rotate(0f, 180, 0f);
         _moveSpeed = _standardMoveSpeed;
@@ -229,6 +261,10 @@ public class PlayerController : MonoBehaviour,IController
     public bool IsGrounded()
     {
         return _jumpPoint.collider != null;
+    } 
+    public bool isUsingWeapon()
+    {
+        return _usingWeapon;
     }
 
     IEnumerator CoyoteTimer()
@@ -245,15 +281,7 @@ public class PlayerController : MonoBehaviour,IController
         _jumpBuffered = false;
 
     }
-    IEnumerator RunTimer()
-    {
-        _isRunning = true;
-        yield return new WaitForSeconds(1.5f);
-        if(!_abortRun)
-            _moveSpeed = 0.6f;
-        _isRunning = false;
 
-    }
 
 
 

@@ -13,5 +13,7 @@ namespace Controller
 
         public bool FacingRight();
         public bool IsGrounded();
+
+        public bool isUsingWeapon();
     }
 }

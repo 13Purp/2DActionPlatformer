@@ -20,6 +20,7 @@ namespace Mobs
         [SerializeField] protected float detectionDistance;
         protected LayerMask _jumpable;
         protected Vector2 _boxCastSize;
+        private bool _usingWeapon;
 
 
 
@@ -58,7 +59,7 @@ namespace Mobs
         }
         public virtual void damage(float damage)
         {
-            lifePoints = lifePoints - damage;
+            lifePoints -= damage;
             Debug.Log("Jao ode:" + damage);
             if (lifePoints <= 0)
                 die();
@@ -69,7 +70,9 @@ namespace Mobs
             Destroy(gameObject);
         }
 
-
-
+        public bool isUsingWeapon()
+        {
+            return _usingWeapon;
+        }
     }
 }

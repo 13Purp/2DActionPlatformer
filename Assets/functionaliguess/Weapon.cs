@@ -44,9 +44,8 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowTarget();
- 
-      
+        if(IController.isUsingWeapon())
+            FollowTarget();
     }
 
     public void weakFire()
