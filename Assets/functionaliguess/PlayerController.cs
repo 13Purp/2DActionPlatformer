@@ -2,6 +2,8 @@ using Bullets;
 using System.Collections;
 using UnityEngine;
 using Controller;
+using Interactables;
+using UnityEditor.Tilemaps;
 public class PlayerController : MonoBehaviour,IController
 {
 
@@ -13,7 +15,6 @@ public class PlayerController : MonoBehaviour,IController
 
 
     private RaycastHit2D _jumpPoint;
-    private float _moveX;
     private float _standardMoveSpeed;
     public bool _facingRight;
     private bool _isJumping;
@@ -22,10 +23,16 @@ public class PlayerController : MonoBehaviour,IController
     private bool _usingWeapon;
     private bool _isWalking;
     private float _runCntDwn;
+    private bool _touchingWall;
 
 
     private bool _wFire;
     private bool _sFire;
+    private bool _jump;
+    private float _moveX;
+    private bool _interact;
+
+
 
 
 
@@ -34,7 +41,6 @@ public class PlayerController : MonoBehaviour,IController
 
     [SerializeField] private float _jumpForce;
     private Vector2 _gravityModifier;
-    private bool _jump;
 
     [SerializeField] private float _moveSpeed;
     [SerializeField] private LayerMask _jumpable;
@@ -87,7 +93,9 @@ public class PlayerController : MonoBehaviour,IController
         _wFire = false;
         _sFire = false;
         _isWalking = false;
+        _touchingWall = false;
         _runCntDwn = 0;
+        _interact=false;
         //weapon.displayWeapon();
 
         _isGrounded = true;
@@ -121,6 +129,12 @@ public class PlayerController : MonoBehaviour,IController
         {
             weapon.SetZapBullet();
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _interact = true;
+            Debug.Log("Pressed E");
+
+        }
 
         if (_usingWeapon)
         {
@@ -136,8 +150,14 @@ public class PlayerController : MonoBehaviour,IController
 
     private void FixedUpdate()
     {
+        Vector2 direction = (_facingRight) ? Vector2.right : Vector2.left;
+     
+        //RaycastHit2D hit = Physics2D.Raycast(_capCol.bounds.center, direction, _capCol.size.x/4, LayerMask.GetMask("Ground"));
+        //_touchingWall = (hit) ? true : false;
+        //if (!IsGrounded() && _touchingWall)
+        //    Debug.Log("bonk");
 
-        if(_wFire)
+        if (_wFire)
             weapon.weakFire();
         if(_sFire) 
             weapon.strongFire();
@@ -146,18 +166,20 @@ public class PlayerController : MonoBehaviour,IController
 
         handleJump();
 
+        handleInteraction();
+
        
 
         animator.SetBool("isWalking", _isWalking);
         animator.SetBool("isShooting", _usingWeapon);
     
     }
-
     
     private void handleJump()
     {
         _wasGrounded = _isGrounded;
         _isGrounded = IsGrounded();
+    
         //bool Jumped = false;
 
         if (_rigidBody2D.velocity.y < 0)
@@ -247,6 +269,24 @@ public class PlayerController : MonoBehaviour,IController
         _facingRight = !_facingRight;
         transform.Rotate(0f, 180, 0f);
         _moveSpeed = _standardMoveSpeed;
+    }
+
+    public void handleInteraction()
+    {
+        if (_interact)
+        {
+            Debug.Log("Pressed E");
+            _interact = false;
+            Collider2D hit = Physics2D.OverlapCircle(_capCol.bounds.center, _capCol.size.x/3, LayerMask.GetMask("Interactable"));
+            if(hit)
+            {
+                Debug.Log("Interacting");
+                IInteractable obj =hit.GetComponent<IInteractable>();
+                obj.Interact();
+            }
+
+
+        }
     }
 
     public bool IsPlayer()

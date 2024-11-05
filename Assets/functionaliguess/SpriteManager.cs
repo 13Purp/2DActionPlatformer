@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteManager : MonoBehaviour
+public class SpriteManager: MonoBehaviour
 {
 
      [SerializeField] private SpriteRenderer _spriteRenderer;
-     [SerializeField] private SpriteRenderer _idle;
-     [SerializeField] private SpriteRenderer _shooting;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+     [SerializeField] private Sprite _sprite1;
+     [SerializeField] private Sprite _sprite2;
+    private bool _active=false;
 
-    // Update is called once per frame
-    void Update()
+
+    public void changeSprite()
     {
-        
+        if (_active)
+            _spriteRenderer.sprite = _sprite2;
+        else
+            _spriteRenderer.sprite = _sprite1;
+        _active=!_active;
     }
 }
