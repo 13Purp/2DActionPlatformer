@@ -23,13 +23,28 @@ Currently implemented:
             -Calling their Shoot method acts as a rapid fire, while the strongShoot method acts more like a shotgun
         -ZapBullets represent a bolt of electricty with randomly generated visuals used for the purpose of damaging Enemies
             -Calling their Shoot method, again, acts as a rapid fire, while the strongShoot method acts as a bolt of thunder exploding on impact
-    
+	    
+  -Interactable interface
+
+    -Declares the Interact method, invoked by the Player when near an object whose class implements the interface
+    -Currently used by Lever class
+
+  -Lever class
+
+    -The lever can be pulled back and fourth by the Player when the Player is in close proximity
+    -Currently, interacting with the Lever only changes the position of the Lever arm
+    -Not yet implemented: Will be able to open doors or trigger certain in-game events
+  
   -Weapon class
 	
     -The weapon is held by objects implementing the Controller interface and "fires"  Bullets
     -Weapons follow a target (The mouse cursor in case of Player holding it or a position set by the object holding the Weapon)
     -The display of weapons can be turned off by the class holding them (by calling the displayWeapon method of said Weapon), used to represent a fighting/idle state
     -The switching of bullets is implemented using the Strategy design pattern
+  
+  -SpriteManager class
+
+    -Used mainly by objects implementing the Interactable interface to switch Sprite between active and inactive state (such as changing the direction of the Lever arm)
   
   -WorldCache class
 	
@@ -42,10 +57,12 @@ Currently implemented:
     -While traveling at sufficiently high speeds, are capable of "hurting" Enemies on collision by calling their TakeDamage method
 
 
+
 Remaining functionalities before delving into level desing:
 
-	-Capability of player to sprint and cling onto edges of platforms while in a non-fighting state
- 	-Objects interactable by the player (Buttons, Doors, Levers, etc...)
+	-Capability of player to sprint --done
+ 	-Capability of player to cling onto edges of platforms while in a non-fighting state
+ 	-Objects interactable by the player (Buttons, Doors, Levers, etc...) --Lever and Interactable interface done
  	-Dialog boxes
   	-Dynamic lighting effects
    	-More enemy types
